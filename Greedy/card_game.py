@@ -6,4 +6,5 @@ for i in range(0, N):
     card_list.append(list(map(int, input().split())))
     min_list.append(min(card_list[i]))
 
-print(min_list)
+result = max(min_list)
+print(result)
