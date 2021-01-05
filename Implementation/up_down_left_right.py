@@ -1,18 +1,16 @@
 size = int(input("input size: "))
 direction_list = input("input direction: ").split()
 
-list_size = len(direction_list)
-
 x = 1
 y = 1
-for i in range(list_size):
-    if direction_list[i] == 'U':
+for direction in direction_list:
+    if direction == 'U':
         if y-1 > 0:
             y-=1
-    elif direction_list[i] == 'D':
+    elif direction == 'D':
         if y+1 <= size:
             y+=1
-    elif direction_list[i] == 'L':
+    elif direction == 'L':
         if x-1 > 0:
             x-=1
     else:
