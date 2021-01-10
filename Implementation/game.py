@@ -10,8 +10,6 @@ sum=0
 num=0
 steps = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
-
-# 반복문으로 감싸주기
 while True:
     # set direction
     D-=1
