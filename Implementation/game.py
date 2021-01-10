@@ -6,7 +6,10 @@ map_list = []
 for i in range(N):
     map_list.append(list(map(int, input().split())))
 
-sum=0
+# set current location's state
+map_list[A][B] = 2
+sum=1
+
 num=0
 steps = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
