@@ -1,4 +1,5 @@
 # stack은 list로 구현
+# last in first out
 
 stack = []
 stack.append(5)
