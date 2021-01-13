@@ -10,6 +10,14 @@ stack.append(1)
 stack.append(4)
 pop_value2 = stack.pop()
 
+
 print(stack)
+print(stack[0:])
+print(stack[:])
+
+
+print(stack[::-1])
+
+
 print(pop_value1)
 print(pop_value2)
