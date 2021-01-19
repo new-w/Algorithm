@@ -5,15 +5,22 @@ def convert(num):
     return sum
 
 N = int(input())
+
 value_list = list(map(int, input().split()))
+diff_list = []
+
 money = int(input())
 cur_money = money
+
+for i in range(0, N-1):
+    diff_list.append(value_list[i+1] - value_list[i])
+
 
 money_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 final_result=0
 # 자릿수를 크게 만드는 방법 -> 최대한 많은 개수의 숫자를 구입 -> 최대 개수의 숫자로 이루어진 값들의 크기를 비교하여 최종 선택
 
-# 최대한 많은 개수의 숫자를 구입
+# 최대 개수의 숫자를 구입
 num_list = []
 if N!=1:
     if (money//value_list[1]!=0):
@@ -25,7 +32,7 @@ if N!=1:
                 num_list.append(money_list[0])
                 cur_money-=value_list[0]
         
-        # 각 자리의 수를 최대 값으로 변경
+        # 각 자리의 수를 가장 높은 자릿수(맨 왼쪽) 부터 최대 값으로 변경
         
 
     else:
