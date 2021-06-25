@@ -1,5 +1,5 @@
 # Algorithm
 ====================
-### Greedy -> 특정조건찾기
-### simulation -> 설명에 따라 순차적으로
+### Greedy -> 분류 기준 찾기
+### Implementation -> 설명에 따라 순차적으로
 ### DFS/BFS
